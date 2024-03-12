@@ -9,7 +9,7 @@
 }
 
 .logo {
-    width: 160px;
+    width: 130px;
     cursor: pointer;
 }
 
@@ -22,7 +22,7 @@ ul {
 ul li {
     display: inline-block;
     margin: 10px 20px;
-    font-size: 18px;
+    font-size: 12px;
     cursor: pointer;
 }
 
