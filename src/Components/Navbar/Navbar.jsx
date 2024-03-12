@@ -26,7 +26,10 @@ export const Navbar = ({theme,setTheme}) => {
                     <NavLink to="/about">About</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/emptyPg1">EmptyPg1</NavLink>
+                    <NavLink to="/RegistrationForm">RegistrationForm</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/SignInForm">SignInForm</NavLink>
                 </li>
                 <li>
                     <NavLink to="/emptyPg2">EmptyPg2</NavLink>
