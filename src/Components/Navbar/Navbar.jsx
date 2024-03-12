@@ -17,10 +17,22 @@ export const Navbar = ({theme,setTheme}) => {
             <img src={theme ==='light' ? logo_light : logo_dark} alt="" className='logo'/>
             <ul>
                 <li>
+                    <NavLink to="/dashboard">Dashboard</NavLink>
+                </li>
+                <li>
                     <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
                     <NavLink to="/about">About</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/emptyPg1">EmptyPg1</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/emptyPg2">EmptyPg2</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/emptyPg3">EmptyPg3</NavLink>
                 </li>
             </ul>
 
