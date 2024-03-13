@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +11,8 @@
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     background: #ced8ff;
     transition: 0.5s;
@@ -19,3 +21,4 @@
 .container.dark {
     background: #222;
 }
+

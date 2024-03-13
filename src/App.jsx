@@ -3,7 +3,8 @@ import Navbar from "./Components/Navbar/Navbar";
 import {Route, Router, Routes} from 'react-router-dom';
 import {Home} from "./pages/Home";
 import {About} from "./pages/About";
-import {EmptyPg1} from "./pages/EmptyPg1";
+import RegistrationForm from "./pages/RegistrationForm";
+import SignInForm from "./pages/SignInForm";
 import {EmptyPg2} from "./pages/EmptyPg2";
 import {EmptyPg3} from "./pages/EmptyPg3";
 import "./App.css";
@@ -29,7 +30,8 @@ const App = () => {
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/about" element={<About/>}/>
-                        <Route path="/emptyPg1" element={<EmptyPg1/>}/>
+                        <Route path="/RegistrationForm" element={<RegistrationForm/>}/>
+                        <Route path="/SignInForm" element={<SignInForm/>}/>
                         <Route path="/emptyPg2" element={<EmptyPg2/>}/>
                         <Route path="/emptyPg3" element={<EmptyPg3/>}/>
                         <Route path="/dashboard" element={<Dashboard />} />
