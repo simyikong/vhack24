@@ -73,26 +73,16 @@ ul li {
 }
 
 .profile-icon {
-<<<<<<< HEAD
-    position: absolute;
-    right: 0;
-    cursor: pointer;
-    padding-right: 50px;
-=======
     position: relative;
     cursor: pointer;
     padding-right: 20px;
     font-size: 1.5em;
->>>>>>> e0991dc5ea57b428012cae1dfa16175b1764b50b
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
-<<<<<<< HEAD
-=======
     top: 100%;
->>>>>>> e0991dc5ea57b428012cae1dfa16175b1764b50b
     right: 0;
     background-color: #f9f9f9;
     min-width: 160px;
