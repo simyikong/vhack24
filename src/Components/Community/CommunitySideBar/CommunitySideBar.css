@@ -24,12 +24,14 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    color: white;
   }
   
   .sidebarListItem {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    color: white;
   }
   
   .sidebarIcon {
@@ -42,6 +44,7 @@
     padding: 10px;
     border-radius: 5px;
     font-weight: 500;
+    color: white;
   }
   
   .sidebarHr {
@@ -52,4 +55,5 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    color: white;
   }

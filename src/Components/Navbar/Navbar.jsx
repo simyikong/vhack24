@@ -16,7 +16,6 @@ export const Navbar = ({theme,setTheme}) => {
     }
     return (
         <div className='navbar'>
-
             <img src={theme ==='light' ? logo_light : logo_dark} alt="" className='logo'/>
             <ul>
                 <li>
@@ -29,7 +28,11 @@ export const Navbar = ({theme,setTheme}) => {
                     <NavLink to="/about">About</NavLink>
                 </li>
                 <li>
+<<<<<<< HEAD
                     <NavLink to="/emptyPg2">EmptyPg2</NavLink>
+=======
+                    <NavLink to="/Community">Community</NavLink>
+>>>>>>> e0991dc5ea57b428012cae1dfa16175b1764b50b
                 </li>
                 <li>
                     <NavLink to="/emptyPg3">EmptyPg3</NavLink>
@@ -42,6 +45,11 @@ export const Navbar = ({theme,setTheme}) => {
                 <NavLink to="/RegistrationForm">RegistrationForm</NavLink>
                 <br></br>
                 <NavLink to="/SignInForm">SignInForm</NavLink>
+<<<<<<< HEAD
+=======
+                <br></br>
+                <NavLink to="/Profile">Profile</NavLink>
+>>>>>>> e0991dc5ea57b428012cae1dfa16175b1764b50b
                 </div>
             </div>
                   
