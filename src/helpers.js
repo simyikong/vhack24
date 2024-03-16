@@ -1,12 +1,12 @@
-export const sortStocksByDividendYield = (stocks) => {
-  const stocksCopy = [...stocks];
-  const year = getCurrentYear();
+export const sortStocksByDividendYield = () => {
+  // const stocksCopy = [...stocks];
+  // const year = getCurrentYear();
 
-  const sorted = stocksCopy.sort((stockA, stockB) => {
-    return stockB.dividends[year] - stockA.dividends[year];
-  });
-
-  return sorted;
+//   const sorted = stocksCopy.sort((stockA, stockB) => {
+//     return stockB.dividends[year] - stockA.dividends[year];
+//   });
+//
+//   return sorted;
 };
 
 export const sortStocksByCompoundedYield = (stocks) => {

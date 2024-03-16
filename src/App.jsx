@@ -10,7 +10,6 @@ import About from "./pages/About";
 import RegistrationForm from "./pages/RegistrationForm";
 import SignInForm from "./pages/SignInForm";
 import {Community} from "./pages/Community";
-import {EmptyPg3} from "./pages/EmptyPg3";
 import {Profile} from "./pages/Profile";
 import {EditProfile} from "./pages/EditProfile";
 import {Budget} from "./pages/Budget";
@@ -61,7 +60,6 @@ const App = () => {
                         <Route path="/SignInForm" element={<SignInForm/>}/>
                         <Route path="/Profile" element={<Profile/>}/>
                         <Route path="/Community" element={<Community/>}/>
-                        <Route path="/emptyPg3" element={<EmptyPg3/>}/>
                         <Route path="/dashboard" element={<Dashboard />} />
                         <Route path="EditProfile" element={<EditProfile />}/>
                         <Route path="Budget" element={<Budget />}/>
