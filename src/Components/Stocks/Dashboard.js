@@ -1,11 +1,13 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext, useEffect, useState } from "react";
 import ThemeContext from "../../context/ThemeContext";
 import Overview from "./Overview";
 import Details from "./Details";
-import Chart from "./Chart";
+// import Chart from "./Chart";
 import Header from "./Header";
 import StockContext from "../../context/StockContext";
 import { fetchStockDetails, fetchQuote } from "../../utils/api/stock-api";
+import LiveChart from "../../LiveChart";
 
 const Dashboard = () => {
   const { darkMode } = useContext(ThemeContext);
@@ -51,7 +53,8 @@ const Dashboard = () => {
         <Header name={stockDetails.name} />
       </div>
       <div className="md:col-span-2 row-span-4">
-        <Chart />
+        {/*<Chart />*/}
+        <LiveChart symbol={'IBM'} />
       </div>
       <div>
         <Overview

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Card from "./Card";
 
 const Overview = ({ symbol, price, change, changePercent, currency }) => {

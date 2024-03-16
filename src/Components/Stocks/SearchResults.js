@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import{ useContext } from "react";
 import StockContext from "../../context/StockContext";
 import ThemeContext from "../../context/ThemeContext";
 

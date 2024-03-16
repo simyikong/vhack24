@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from 'react';
+// eslint-disable-next-line no-unused-vars
+import React , {useEffect, useState} from 'react';
 import Navbar from "./Components/Navbar/Navbar";
-import {Route, Router, Routes} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 
 import {Home} from "./pages/Home";
 import {About} from "./pages/About";
