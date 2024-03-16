@@ -1,7 +1,6 @@
 import "./CommunitySideBar.css";
 import {
   RssFeed,
-  Chat,
   Person,
   Group,
   Business,
