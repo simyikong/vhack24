@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import ThemeContext from "../../context/ThemeContext";
 import { searchSymbol } from "../../utils/api/stock-api";
 import SearchResults from "./SearchResults";

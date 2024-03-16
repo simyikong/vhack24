@@ -1,5 +1,4 @@
 import {
-  getCurrentYear,
   sortStocksByDividendPayoutValue,
   growingDividends,
   consistentDividends,

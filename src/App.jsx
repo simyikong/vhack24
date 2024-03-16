@@ -3,7 +3,7 @@ import React , {useEffect, useState} from 'react';
 import Navbar from "./Components/Navbar/Navbar";
 import {Route, Routes} from 'react-router-dom';
 
-import data from "./data";
+// import data from "./data";
 
 import {Home} from "./pages/Home";
 import About from "./pages/About";
@@ -17,7 +17,6 @@ import {Budget} from "./pages/Budget";
 
 import "./App.css";
 import Dashboard from "./Components/Stocks/Dashboard";
-import StockView from "./pages/StockView/StockView";
 import StockContext from "./context/StockContext";
 import ThemeContext from "./context/ThemeContext";
 
@@ -27,24 +26,24 @@ const App = () => {
     const [darkMode, setDarkMode] = useState(false);
     const [stockSymbol, setStockSymbol] = useState("MSFT");
 
-    const [exchanges, setExchanges] = useState([]);
-    const [stocks, setStocks] = useState([]);
+    // const [exchanges, setExchanges] = useState([]);
+    // const [stocks, setStocks] = useState([]);
   
-    const getData = () => {
-      const exchanges = data.exchanges;
-      const stocks = data.stocks;
-        console.log(stocks);
-      return {
-        exchanges,
-        stocks,
-      };
-    };
+    // const getData = () => {
+    //   const exchanges = data.exchanges;
+    //   const stocks = data.stocks;
+    //     console.log(stocks);
+    //   return {
+    //     exchanges,
+    //     stocks,
+    //   };
+    // };
   
-    useEffect(() => {
-      const { exchanges, stocks } = getData();
-      setExchanges(exchanges);
-      setStocks(stocks);
-    }, []);
+    // useEffect(() => {
+    //   const { exchanges, stocks } = getData();
+    //   setExchanges(exchanges);
+    //   setStocks(stocks);
+    // }, []);
 
     useEffect(() => {
         localStorage.setItem('current_theme', theme);
@@ -69,25 +68,6 @@ const App = () => {
                     </Routes>
                 </ThemeContext.Provider>
             </StockContext.Provider>
-
-            <Router>
-        <Route
-          exact
-          path="/"
-          render={(props) => (
-            <Dashboard
-              exchanges={exchanges}
-              stocks={stocks}
-              setStocks={setStocks}
-              {...props}
-            />
-          )}
-        />
-        <Route
-          path="/stocks/:ticker"
-          render={(props) => <StockView {...props} stocks={stocks} />}
-        />
-      </Router>
         </div>
     );
 }

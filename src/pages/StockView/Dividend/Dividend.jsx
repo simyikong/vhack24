@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import DividendList from "../../../Components/DividendList/DividendList";
 import DividendCalculator from "../../../Components/DividendCalculator/DividendCalculator";
