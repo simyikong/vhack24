@@ -33,6 +33,9 @@ export const Navbar = ({theme,setTheme}) => {
                 <li>
                     <NavLink to="/emptyPg3">EmptyPg3</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/Budget">Budget</NavLink>
+                </li>
             </ul>
 
             <div className='profile-icon' >
