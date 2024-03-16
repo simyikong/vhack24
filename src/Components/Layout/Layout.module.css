@@ -1,0 +1,11 @@
+.layoutContent {
+  background-color: var(--dashboard-bg);
+  padding: 40px 20px;
+  min-height: calc(100vh - 335px);
+  box-sizing: border-box;
+}
+
+.layoutContentContainer {
+  max-width: var(--site-width);
+  margin: 0 auto;
+}
