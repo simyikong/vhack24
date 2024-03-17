@@ -35,7 +35,7 @@ const RegistrationForm = () => {
                     <label className="block text-gray-700">Password:</label>
                     <input type="password" name="password" value={form.password} onChange={handleChange} className="mt-1 p-2 w-full border border-gray-300 rounded" />
                 </div>
-                <input type="submit" value="Register" className="w-full p-2 text-white bg-blue-600 rounded hover:bg-blue-500" />
+                <input type="submit" value="Register" className="w-full p-2 text-white bg-purple-500 rounded hover:bg-purple-400" />
             </form>
         </div>
     );
