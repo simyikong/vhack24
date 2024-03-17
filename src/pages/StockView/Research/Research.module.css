@@ -21,11 +21,11 @@
   flex-direction: column;
   padding: 2rem;
   background-color: #fff;
-  border-radius: var(--box-border-radius);
+  /*border-radius: var(--box-border-radius);*/
 }
 
 .header {
-  font-size: var(--h1-font-size);
+  /*font-size: var(--h1-font-size);*/
   margin-bottom: 2rem;
 }
 
@@ -45,7 +45,7 @@
   margin-top: 0.5rem;
   border: none;
   padding: 5px;
-  border-bottom: 2px solid var(--primary-blue);
+  /*border-bottom: 2px solid var(--primary-blue);*/
 }
 
 .textAreaContainer {
@@ -55,7 +55,7 @@
 .textarea {
   border: none;
   padding: 5px;
-  border-bottom: 2px solid var(--primary-blue);
+  /*border-bottom: 2px solid var(--primary-blue);*/
   height: 50px;
 }
 
@@ -70,7 +70,7 @@
   font-size: 1rem;
   margin: 2rem auto 1rem auto;
   color: #fff;
-  background-color: var(--primary-blue);
+  /*background-color: var(--primary-blue);*/
   text-align: center;
   padding: 8px;
   border: none;

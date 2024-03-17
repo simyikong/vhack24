@@ -22,7 +22,7 @@ export const Navbar = ({theme,setTheme}) => {
                     <NavLink to="/dashboard">Dashboard</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/AI">AI</NavLink>
                 </li>
                 <li>
                     <NavLink to="/about">About</NavLink>
