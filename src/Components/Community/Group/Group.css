@@ -1,0 +1,51 @@
+    .groupContainer {
+        display: flex;
+        justify-content: center;
+        flex: 1; /* Allow Group component to expand */
+    }
+
+    .groupList {
+        width: 100%; /* Ensure the list fills the available width */
+    }
+
+    .groupRow {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 20px; /* Padding for spacing */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%; /* Ensure each row fills the available width */
+    }
+
+  
+  .groupRow:hover {
+    background-color: #107fac;
+  }
+  
+  .groupCover {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .groupDetails {
+    flex: 1;
+  }
+  
+  .groupName {
+    margin: 0;
+    font-size: 18px;
+    color: white
+  }
+  
+  .groupMemberCount,
+  .groupCreated,
+  .groupDescription {
+    margin: 5px 0;
+    font-size: 14px;
+    color: white;
+  }
+  

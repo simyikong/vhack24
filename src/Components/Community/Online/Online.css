@@ -1,32 +1,65 @@
 .rightbarFriend {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .rightbarProfileImgContainer {
-    margin-right: 10px;
-    position: relative;
-  }
-  
-  .rightbarProfileImg {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .rightbarOnline{
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: limegreen;
-      position: absolute;
-      top: -2px;
-      right: 0;
-      border: 2px solid white;
-  }
-  
-  .rightbarUsername{
-      font-weight: 500;
-  }
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.rightbarUserInfo {
+  background-color: #282c34;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+}
+
+.rightbarHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.rightbarUsername {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.rightbarDetails {
+  display: flex;
+  flex-direction: row; /* Display items in a row */
+  justify-content: space-between; /* Space items evenly */
+}
+
+.rightbarPrice,
+.rightbarPriceChange {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.progressBar {
+  background-color: #37474f;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+  position: relative;
+}
+
+.progress {
+  background-color: #66bb6a; /* Green color for filled progress */
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* Tooltip */
+.progressBar:hover::after {
+  content: "Discussed frequency";
+  position: absolute;
+  bottom: 100%; /* Position above the progress bar */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}

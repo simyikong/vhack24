@@ -9,7 +9,7 @@ import {Home} from "./pages/Home";
 import About from "./pages/About";
 import RegistrationForm from "./pages/RegistrationForm";
 import SignInForm from "./pages/SignInForm";
-import {Community} from "./pages/Community";
+import {Community} from "./pages/CommunityPages/Community";
 import {Profile} from "./pages/Profile";
 import {EditProfile} from "./pages/EditProfile";
 import {Budget} from "./pages/Budget";
@@ -18,6 +18,11 @@ import "./App.css";
 import Dashboard from "./Components/Stocks/Dashboard";
 import StockContext from "./context/StockContext";
 import ThemeContext from "./context/ThemeContext";
+
+import Groups from "./pages/CommunityPages/Groups";
+import Users from "./pages/CommunityPages/Users";
+import Companies from "./pages/CommunityPages/Companies";
+import Bookmarks from "./pages/CommunityPages/Bookmarks";
 
 const App = () => {
     const currentTheme = localStorage.getItem('current_theme');
@@ -43,7 +48,6 @@ const App = () => {
     //   setExchanges(exchanges);
     //   setStocks(stocks);
     // }, []);
-
     useEffect(() => {
         localStorage.setItem('current_theme', theme);
     }, [theme]);
@@ -63,6 +67,11 @@ const App = () => {
                         <Route path="/dashboard" element={<Dashboard />} />
                         <Route path="EditProfile" element={<EditProfile />}/>
                         <Route path="Budget" element={<Budget />}/>
+                        <Route path="Explore" element={<Community />} />
+                        <Route path="/Groups" element={<Groups />} />
+                        <Route path="/Users" element={<Users />} />
+                        <Route path="/Companies" element={<Companies />} />
+                        <Route path="/Bookmarks" element={<Bookmarks />} />
                     </Routes>
                 </ThemeContext.Provider>
             </StockContext.Provider>
