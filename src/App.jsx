@@ -185,6 +185,28 @@ const App = () => {
                         <Route path="/stock-details" element={<StockDetails/>}/>
                         <Route path="/all-stock-pg" element={<AllStocks/>}/>
                         <Route path="/AI" element={<AI/>}/>
+                        <Route path="/dashboard" element={<Dashboard/>}/>
+                        <Route path="EditProfile" element={<EditProfile/>}/>
+                        <Route path="Budget" element={<Budget/>}/>
+                        <Route path="Explore" element={<Community/>}/>
+                        <Route path="/Groups" element={<Groups/>}/>
+                        <Route path="/Users" element={<Users/>}/>
+                        <Route path="/Companies" element={<Companies/>}/>
+                        <Route path="/Bookmarks" element={<Bookmarks/>}/>
+                        <Route path="/stock-details" element={<StockDetails/>}/>
+                        <Route path="/all-stock-pg" element={<AllStocks/>}/>
+                        <Route path="/AI" element={<AI/>}/>
+                        <Route path="/dashboard" element={<Dashboard />} />
+                        <Route path="EditProfile" element={<EditProfile />}/>
+                        <Route path="Budget/Budget" element={<Budget />}/>
+                        <Route path="Budget/EnterIncExp" element={<EnterIncExp />} />
+                        <Route path="Budget/CalcInv" element={<CalcInv />} />
+                        <Route path="Explore" element={<Community />} />
+                        <Route path="/Groups" element={<Groups />} />
+                        <Route path="/Users" element={<Users />} />
+                        <Route path="/Companies" element={<Companies />} />
+                        <Route path="/Bookmarks" element={<Bookmarks />} />
+
                     </Routes>
                     <div id="chartContainer"></div>
                     <div id="table_container"></div>
@@ -192,7 +214,8 @@ const App = () => {
             </StockContext.Provider>
         </div>
     );
+        </div>);
 }
 
 export default App;
- 
+
