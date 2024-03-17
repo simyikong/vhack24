@@ -12,7 +12,10 @@ import SignInForm from "./pages/SignInForm";
 import {Community} from "./pages/CommunityPages/Community";
 import {Profile} from "./pages/Profile";
 import {EditProfile} from "./pages/EditProfile";
-import {Budget} from "./pages/Budget";
+
+import {Budget} from "./pages/Budget/Budget";
+import { EnterIncExp } from './pages/Budget/EnterIncExp';
+import { CalcInv } from './pages/Budget/CalcInv';
 
 import "./App.css";
 import Dashboard from "./Components/Stocks/Dashboard";
@@ -161,6 +164,16 @@ const App = () => {
                         <Route path="/SignInForm" element={<SignInForm/>}/>
                         <Route path="/Profile" element={<Profile/>}/>
                         <Route path="/Community" element={<Community/>}/>
+                        <Route path="/dashboard" element={<Dashboard />} />
+                        <Route path="EditProfile" element={<EditProfile />}/>
+                        <Route path="Budget/Budget" element={<Budget />}/>
+                        <Route path="Budget/EnterIncExp" element={<EnterIncExp />} />
+                        <Route path="Budget/CalcInv" element={<CalcInv />} />
+                        <Route path="Explore" element={<Community />} />
+                        <Route path="/Groups" element={<Groups />} />
+                        <Route path="/Users" element={<Users />} />
+                        <Route path="/Companies" element={<Companies />} />
+                        <Route path="/Bookmarks" element={<Bookmarks />} />
                         <Route path="/dashboard" element={<Dashboard/>}/>
                         <Route path="EditProfile" element={<EditProfile/>}/>
                         <Route path="Budget" element={<Budget/>}/>
@@ -177,8 +190,9 @@ const App = () => {
                     <div id="table_container"></div>
                 </ThemeContext.Provider>
             </StockContext.Provider>
-        </div>);
+        </div>
+    );
 }
 
 export default App;
-
+ 
