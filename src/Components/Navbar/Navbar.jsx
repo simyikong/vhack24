@@ -30,8 +30,8 @@ export const Navbar = ({theme,setTheme}) => {
                 <li>
                     <NavLink to="/Community">Community</NavLink>
                 </li>
-                <li>
-                    <NavLink to="/Budget">Budget</NavLink>
+                <li className="group">
+                    <NavLink to="/Budget/CalcInv">Budget</NavLink>
                 </li>
             </ul>
 

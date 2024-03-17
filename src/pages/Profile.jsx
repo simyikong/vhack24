@@ -14,7 +14,7 @@ export const Profile = () => {
             <p className="text-xl"><strong>Name:</strong> {user.name}</p>
             <p className="text-xl"><strong>Email:</strong> {user.email}</p>
             <p className="text-xl"><strong>Bio:</strong> {user.bio}</p>
-            <Link to="/EditProfile" className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+            <Link to="/EditProfile" className="mt-4 px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-400">
                 Edit Profile
             </Link>
         </div>
