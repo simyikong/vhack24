@@ -214,7 +214,7 @@ const App = () => {
             </StockContext.Provider>
         </div>
     );
-        </div>);
+
 }
 
 export default App;
